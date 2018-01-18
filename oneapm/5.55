@@ -1,0 +1,6 @@
+#!/usr/bin/expect
+set timeout 30
+spawn ssh -l work 10.128.5.55
+expect "password:"
+send "work123\r"
+interact
