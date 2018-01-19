@@ -1,0 +1,6 @@
+#!/usr/bin/expect
+set timeout 30
+spawn ssh -l oneapm 10.128.5.111
+expect "password:"
+send "oneapm123\r"
+interact
